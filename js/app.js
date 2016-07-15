@@ -1,4 +1,4 @@
-var routerApp = angular.module('routerApp', ['ui.router']);
+var routerApp = angular.module('routerApp', ['ui.router', 'angular-loading-bar', 'ngAnimate']);
 
 routerApp.run(['$rootScope', '$state', '$stateParams',
 	function ($rootScope,   $state,   $stateParams) {

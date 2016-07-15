@@ -1,4 +1,5 @@
 <div class="jumbotron text-center">
-	<h1>The about Page</h1>
+	<img src="https://placekitten.com/1020/448" alt="">
+	<h1>The {{$state.current.data.pageTitle}} Page</h1>
 	<p>Here on the <span class="text-danger">about page</span> you can read about the site.</p>
 </div>
