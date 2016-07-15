@@ -1,5 +1,5 @@
 <!doctype html>
-<html data-ng-app="routerApp">
+<html data-ng-app="routerApp" data-ng-controller="routerCtrl">
 <head>
 	<meta charset="UTF-8">
 	<title data-ng-bind="$state.current.data.pageTitle + ' - routerApp'"></title>
@@ -44,6 +44,13 @@
 
 	<div class="container">
 		<div ui-view></div>
+		<h4>
+			This image below has a resolution of 3840x2160, and takes quite some time to load, but no matter
+			what page	you	go to, the image will not reload, neither will the text inside this
+			<code>{{h4}}</code>
+			or the navigation at the top of the site.
+		</h4>
+		<img src="https://placekitten.com/3840/2160" alt="">
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

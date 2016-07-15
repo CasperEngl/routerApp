@@ -1,6 +1,6 @@
 body {
-	min-height: 200vh;
 	padding-top: 70px;
+	padding-bottom: 200px;
 
 	font-family: "Open Sans","Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
@@ -41,4 +41,8 @@ body {
 
 .navbar-inverse .navbar-nav>li>a:hover {
 	color: #ccc;
+}
+
+.container img {
+	width: 100%;
 }

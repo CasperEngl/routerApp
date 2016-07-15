@@ -11,6 +11,10 @@ routerApp.run(['$rootScope', '$state', '$stateParams',
 	}
 ])
 
+.controller('routerCtrl', function($scope) {
+	$scope.h4 = "<h4></h4>";
+})
+
 .config(function($stateProvider, $urlRouterProvider) {
 
 	$urlRouterProvider.otherwise('/');
