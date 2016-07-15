@@ -32,11 +32,14 @@
 		</div>
 
 		<!-- NAVIGATION LINKS -->
-		<div class="navbar-collapse collapse" id="nav">
+		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav main-navigation">
 				<li><a ui-sref="home">Home</a></li>
 				<li><a ui-sref="about">About</a></li>
-				<li><a ui-sref="contact">Contact</a></li>
+				<li><a ui-sref="contact">Contact</a>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="right"><a href="https://twitter.com/CasperEngl" target="_blank">By <span class="red">Casper Engelmann</span></a></li>
 			</ul>
 		</div>
 	</div> <!-- /END CONTAINER -->

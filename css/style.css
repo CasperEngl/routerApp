@@ -46,3 +46,8 @@ body {
 .container img {
 	width: 100%;
 }
+
+.red {
+	color: #e52b21;
+	font-weight: 600;
+}
