@@ -23,19 +23,19 @@ routerApp.run(['$rootScope', '$state', '$stateParams',
 
 	.state('home', {
 		url: '/',
-		templateUrl: 'partials/partial_home.php',
+		templateUrl: 'partials/partial_home.html',
 		data : { pageTitle: 'Home' }
 	})
 
 	.state('about', {
 		url: '/about',
-		templateUrl: 'partials/partial_about.php',
+		templateUrl: 'partials/partial_about.html',
 		data : { pageTitle: 'About' }
 	})
 
 	.state('contact', {
 		url: '/contact',
-		templateUrl: 'partials/partial_contact.php',
+		templateUrl: 'partials/partial_contact.html',
 		data : { pageTitle: 'Contact' }
 	})
 
