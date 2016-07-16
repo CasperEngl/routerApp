@@ -54,7 +54,7 @@
 			<code>{{h4}}</code>
 			or the navigation at the top of the site.
 		</h4>
-		<img src="https://placekitten.com/3840/2160" alt="">
+		<img id="reference-kitty" src="https://placekitten.com/3840/2160" alt="">
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
