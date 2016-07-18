@@ -18,7 +18,6 @@ routerApp.run(['$rootScope', '$state', '$stateParams',
 .config(function($stateProvider, $urlRouterProvider) {
 
 	$urlRouterProvider.otherwise('/');
-
 	$stateProvider
 
 	.state('home', {
