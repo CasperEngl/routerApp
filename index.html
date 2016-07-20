@@ -35,9 +35,9 @@
 			<!-- NAVIGATION LINKS -->
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav main-navigation">
-					<li><a ui-sref="home">Home</a></li>
-					<li><a ui-sref="about">About</a></li>
-					<li><a ui-sref="contact">Contact</a>
+					<li ng-class="{active: $state.includes('home')}"><a ui-sref="home">Home</a></li>
+					<li ng-class="{active: $state.includes('about')}"><a ui-sref="about">About</a></li>
+					<li ng-class="{active: $state.includes('contact')}"><a ui-sref="contact">Contact</a>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="https://twitter.com/CasperEngl" target="_blank">By <span class="red">Casper Engelmann</span></a></li>
