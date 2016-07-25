@@ -6,64 +6,73 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
+	<link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="css/Open-Sans_300_400_600_700_800.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<script src="node_modules/angular/angular.min.js"></script>
+	<base href="/angularApps/routerApp_material/">
 
 </head> 
 <body>
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
+	<md-toolbar layout="row" md-scroll-shrink="true">
+		<md-button class="menu" hide-gt-sm ng-click="openLeftMenu()" aria-label="Navigate website">
+			<i class="material-icons">menu</i>
+		</md-button>
+		<h3>Angular Material - Starter App</h3>
+	</md-toolbar>
 
-				<!-- LOGO ON STICKY NAV BAR -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
+	<div flex layout="row">
 
-				<a ui-sref="home"><div class="navbar-brand">AngularUI routerApp</div></a>
+		<md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id='left' class="md-whiteframe-z2">
+			<md-list>
 
-			</div>
+				<md-list-item>
+					<a href="https://twitter.com/CasperEngl" target="_blank"><md-button>By <span class="red">Casper Engelmann</span></md-button></a>
+				</md-list-item>
+				<md-list-item>
+					<a ui-sref="home">
+						<md-button>Home</md-button>
+					</a>
+				</md-list-item>
+				<md-list-item>
+					<a ui-sref="about">
+						<md-button>About</md-button>
+					</a>
+				</md-list-item>
+				<md-list-item>
+					<a ui-sref="contact">
+						<md-button>Contact</md-button>
+					</a>
+				</md-list-item>
 
-			<!-- NAVIGATION LINKS -->
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav main-navigation">
-					<li ui-sref-active="active"><a ui-sref="home">Home</a></li>
-					<li ui-sref-active="active"><a ui-sref="about">About</a></li>
-					<li ui-sref-active="active"><a ui-sref="contact">Contact</a>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="https://twitter.com/CasperEngl" target="_blank">By <span class="red">Casper Engelmann</span></a></li>
-				</ul>
-			</div>
-		</div> <!-- /END CONTAINER -->
-	</nav>
+			</md-list>
+		</md-sidenav>
 
-	<div class="container">
-		<ui-view><h2>Loading</h2></ui-view>
-		<h4>
-			This image below has a resolution of 3840x2160, and takes quite some time to load, but no matter
-			what page you go to, the image will not reload, neither will the text inside this
-			<code>{{h4}}</code>
-			or the navigation at the top of the site.
-		</h4>
-		<img id="reference-kitty" src="https://placekitten.com/3840/2160" alt="">
+		<md-content flex>
+			<ui-view><h2>Loading</h2></ui-view>
+			<h4>
+				This image below has a resolution of 3840x2160, and takes quite some time to load, but no matter
+				what page you go to, the image will not reload, neither will the text inside this
+				<code>{{h4}}</code>
+				or the navigation at the top of the site.
+			</h4>
+			<img id="reference-kitty" src="https://placekitten.com/3840/2160" alt="">
+		</md-content>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="node_modules/angular-animate/angular-animate.js"></script>
+	<script src="node_modules/angular-aria/angular-aria.js"></script>
+	<script src="node_modules/angular-material/angular-material.js"></script>
 	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 
 	<script src="js/app.js"></script>
-
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </body>
 </html>

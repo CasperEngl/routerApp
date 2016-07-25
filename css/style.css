@@ -1,7 +1,4 @@
 body {
-	padding-top: 70px;
-	padding-bottom: 200px;
-
 	font-family: "Open Sans","Myriad Set Pro","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
@@ -47,7 +44,24 @@ img {
 	width: 100%;
 }
 
+.jumbotron img {
+	max-height: 400px;
+}
+
 .red {
 	color: #e52b21;
 	font-weight: 600;
+}
+
+md-toolbar > h3 {
+	margin: auto;
+}
+
+.md-button > i.material-icons {
+	font-size: 36px;
+	margin-top: 8px;
+}
+
+md-sidenav > md-list > md-list-item > a > .md-button {
+	text-align: left;
 }
