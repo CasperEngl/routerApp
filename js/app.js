@@ -18,7 +18,9 @@ routerApp.run(['$rootScope', '$state', '$stateParams',
 	$scope.h4 = "<h4></h4>";
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+
+	$locationProvider.html5Mode(true);
 
 	$urlRouterProvider.otherwise('/');
 	$stateProvider
