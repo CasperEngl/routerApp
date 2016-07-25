@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html data-ng-app="routerApp" data-ng-controller="routerCtrl">
 <head>
 	<meta charset="UTF-8">
@@ -8,10 +8,9 @@
 
 	<link rel="stylesheet" href="css/Open-Sans_300_400_600_700_800.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="bower_components/angular-loading-bar/src/loading-bar.css">
 	<link rel="stylesheet" href="css/style.css">
 
-	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="node_modules/angular/angular.min.js"></script>
 
 </head>
 <body>
@@ -35,9 +34,9 @@
 			<!-- NAVIGATION LINKS -->
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav main-navigation">
-					<li ng-class="{active: $state.includes('home')}"><a ui-sref="home">Home</a></li>
-					<li ng-class="{active: $state.includes('about')}"><a ui-sref="about">About</a></li>
-					<li ng-class="{active: $state.includes('contact')}"><a ui-sref="contact">Contact</a>
+					<li ui-sref-active="active"><a ui-sref="home">Home</a></li>
+					<li ui-sref-active="active"><a ui-sref="about">About</a></li>
+					<li ui-sref-active="active"><a ui-sref="contact">Contact</a>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="https://twitter.com/CasperEngl" target="_blank">By <span class="red">Casper Engelmann</span></a></li>
@@ -47,10 +46,10 @@
 	</nav>
 
 	<div class="container">
-		<ui-view></ui-view>
+		<ui-view><h2>Loading</h2></ui-view>
 		<h4>
 			This image below has a resolution of 3840x2160, and takes quite some time to load, but no matter
-			what page	you	go to, the image will not reload, neither will the text inside this
+			what page you go to, the image will not reload, neither will the text inside this
 			<code>{{h4}}</code>
 			or the navigation at the top of the site.
 		</h4>
@@ -59,9 +58,8 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-	<script src="bower_components/angular-animate/angular-animate.min.js"></script>
-	<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-	<script src="bower_components/angular-loading-bar/src/loading-bar.js"></script>
+	<script src="node_modules/angular-animate/angular-animate.min.js"></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
 
 	<script src="js/app.js"></script>
 

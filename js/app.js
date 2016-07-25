@@ -1,4 +1,4 @@
-var routerApp = angular.module('routerApp', ['ui.router', 'angular-loading-bar', 'ngAnimate']);
+var routerApp = angular.module('routerApp', ['ui.router', 'ngAnimate']);
 
 routerApp.run(['$rootScope', '$state', '$stateParams',
 	function ($rootScope,   $state,   $stateParams) {
@@ -12,6 +12,9 @@ routerApp.run(['$rootScope', '$state', '$stateParams',
 ])
 
 .controller('routerCtrl', function($scope) {
+	$scope.jumboImg = "";
+	$scope.jumboHeading = "";
+	$scope.jumboText = "";
 	$scope.h4 = "<h4></h4>";
 })
 
@@ -23,19 +26,32 @@ routerApp.run(['$rootScope', '$state', '$stateParams',
 	.state('home', {
 		url: '/',
 		templateUrl: 'partials/partial_home.html',
-		data : { pageTitle: 'Home' }
+		/*
+		controller: function($scope) {
+			$scope.jumboImg = "https://placekitten.com/1020/460",
+			$scope.jumboHeading = "The " + {{$state.current.data.pageTitle}} + " Page",
+			$scope.jumboText = "This page is the <span class='text-danger'>front page</span> of the routerApp.",
+		},
+		*/
+		data: {
+			 pageTitle: 'Home'
+		 }
 	})
 
 	.state('about', {
-		url: '/about',
+		url: '/about/',
 		templateUrl: 'partials/partial_about.html',
-		data : { pageTitle: 'About' }
+		data: {
+			 pageTitle: 'About'
+		 }
 	})
 
 	.state('contact', {
-		url: '/contact',
+		url: '/contact/',
 		templateUrl: 'partials/partial_contact.html',
-		data : { pageTitle: 'Contact' }
+		data: {
+			pageTitle: 'Contact'
+		}
 	})
 
 });
