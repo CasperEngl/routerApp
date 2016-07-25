@@ -1,13 +1,11 @@
 {
-  "name": "routerapp_material",
+  "name": "routerapp",
   "version": "1.0.0",
-  "description": "AngularUI Routing",
-  "main": "index.js",
+  "description": "Angular routing app, dynamic pages with just html and JS",
+  "main": "app.js",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-animate": "^1.5.8",
-    "angular-aria": "^1.5.8",
-    "angular-material": "^1.1.0-rc4-master-06e7e99",
     "angular-ui-router": "^0.3.1"
   },
   "devDependencies": {},
@@ -16,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CasperEngl/routerApp_material.git"
+    "url": "git+https://github.com/CasperEngl/routerApp.git"
   },
-  "author": "Casper Engelmann <casper.engelmann@gmail.com> (http://casperengl.dk/)",
+  "author": "Casper Engelmann <casper.engelmann@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/CasperEngl/routerApp_material/issues"
+    "url": "https://github.com/CasperEngl/routerApp/issues"
   },
-  "homepage": "https://github.com/CasperEngl/routerApp_material#readme"
+  "homepage": "https://github.com/CasperEngl/routerApp#readme"
 }

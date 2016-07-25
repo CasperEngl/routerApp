@@ -1,4 +1,4 @@
-var routerApp = angular.module('routerApp', ['ui.router', 'ngAnimate', 'ngMaterial']);
+var routerApp = angular.module('routerApp', ['ui.router', 'ngAnimate']);
 
 routerApp.run(['$rootScope', '$state', '$stateParams',
 	function ($rootScope,   $state,   $stateParams) {
@@ -11,20 +11,14 @@ routerApp.run(['$rootScope', '$state', '$stateParams',
 	}
 ])
 
-.controller('routerCtrl', function($scope, $mdSidenav) {
+.controller('routerCtrl', function($scope) {
 	$scope.jumboImg = "";
 	$scope.jumboHeading = "";
 	$scope.jumboText = "";
 	$scope.h4 = "<h4></h4>";
-
-	$scope.openLeftMenu = function() {
-		$mdSidenav('left').toggle();
-	};
 })
 
-.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
-
-	$locationProvider.html5Mode(true);
+.config(function($stateProvider, $urlRouterProvider) {
 
 	$urlRouterProvider.otherwise('/');
 	$stateProvider
@@ -58,6 +52,6 @@ routerApp.run(['$rootScope', '$state', '$stateParams',
 		data: {
 			pageTitle: 'Contact'
 		}
-	});
+	})
 
 });
